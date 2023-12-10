@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ship safe AI faster with managed auditing.">
+    <meta name="keywords" content="AI, safety, alignment, misuse, misalignment">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="/blog/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+
+    <title>Straumli</title>
+</head>
+
+
+<body class="color-no-search">
+  <div class="min-h-screen flex flex-col">
+    <div class="flex-grow">
+
+      <div class="bg-white">
+    <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="border-gray-200">
+            <div class="flex flex-wrap items-center justify-between p-8 m-4 mt-2">
+                <div class="flex">
+                    <div class="font-logo text-gray-900 font-bold text-3xl flex">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-8 text-gray-900 pt-2">
+                            <path fill-rule="evenodd"
+                                d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <div class="ml-1">
+                            <a href="/">
+                                straumli
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center md:order-1 space-x-1 md:space-x-2 rtl:space-x-reverse">
+                    <a
+                        class="text-gray-800focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5  focus:outline-none ">&nbsp;</a>
+                </div>
+                <div id="mega-menu-icons"
+                    class="items-center justify-between hidden w-full md:flex md:w-auto md:order-2">
+                    <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+                        <li>
+                            <a href="/"
+                                class="block py-2 px-3 text-teal-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-600 md:p-0      "
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <button id="mega-menu-icons-dropdown-button" data-dropdown-toggle="mega-menu-icons-dropdown"
+                                class="flex items-center justify-between w-full py-2 px-3 font-medium text-teal-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-600 md:p-0      ">
+                                Product
+                                <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                            <div id="mega-menu-icons-dropdown"
+                                class="absolute z-10 grid hidden w-auto grid-cols-1 text-sm bg-white border border-gray-100 rounded-lg shadow-2xl">
+                                <div class="p-2 text-gray-900 max-w-xs">
+                                    <ul aria-labelledby="mega-menu-icons-dropdown-button">
+                                        <li>
+                                            <a href="/#cta">
+                                                <div
+                                                    class="flex items-center text-cyan-600 group hover:bg-cyan-100 p-1 rounded-lg">
+                                                    <div class="rounded-md bg-cyan-300 p-3 m-1">
+                                                        <svg class="w-5 h-5 text-cyan-600 drop-shadow-2xl mx-auto"
+                                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                            fill="currentColor" viewBox="0 0 20 20">
+                                                            <path
+                                                                d="M8 15.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Zm11.707 2.793-4-4a1 1 0 0 0-1.414 1.414l4 4a1 1 0 0 0 1.414-1.414Z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="columns-1 ml-3">
+                                                        <div class="font-bold">
+                                                            evaluations
+                                                        </div>
+                                                        <div class="font-normal">
+                                                            Assess model safety.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <div class="flex items-center text-gray-400 group p-1 rounded-lg">
+                                                    <div class="rounded-md bg-gray-200 p-3 m-1">
+                                                        <svg class="w-5 h-5 text-gray-400 drop-shadow-2xl mx-auto"
+                                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                            fill="currentColor" viewBox="0 0 16 18">
+                                                            <path
+                                                                d="M8 18A18.55 18.55 0 0 1 0 3l8-3 8 3a18.549 18.549 0 0 1-8 15Z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="columns-1 ml-3">
+                                                        <div class="font-bold">
+                                                            upgrades
+                                                        </div>
+                                                        <div class="font-normal">
+                                                            Improve model safety.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <div class="flex items-center text-gray-400 group p-1 rounded-lg">
+                                                    <div class="rounded-md bg-gray-200 p-3 m-1">
+                                                        <svg class="w-5 h-5 text-gray-400 drop-shadow-2xl mx-auto"
+                                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                            fill="currentColor" viewBox="0 0 14 20">
+                                                            <path
+                                                                d="M13 20a1 1 0 0 1-.64-.231L7 15.3l-5.36 4.469A1 1 0 0 1 0 19V2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v17a1 1 0 0 1-1 1Z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="columns-1 ml-3">
+                                                        <div class="font-bold">
+                                                            certificates
+                                                        </div>
+                                                        <div class="font-normal">
+                                                            Attest model safety.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <div class="flex items-center text-gray-400 group p-1 rounded-lg">
+                                                    <div class="rounded-md bg-gray-200 p-3 m-1">
+                                                        <svg class="w-5 h-5 text-gray-400 drop-shadow-2xl mx-auto"
+                                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                            fill="currentColor" viewBox="0 0 20 16">
+                                                            <path
+                                                                d="m19.822 7.431-4.846-7A1 1 0 0 0 14.153 0H1a1 1 0 0 0-.822 1.569L4.63 8 .178 14.431A1 1 0 0 0 1 16h13.153a1.001 1.001 0 0 0 .823-.431l4.846-7a1 1 0 0 0 0-1.138Z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="columns-1 ml-3">
+                                                        <div class="font-bold">
+                                                            flows
+                                                        </div>
+                                                        <div class="font-normal">
+                                                            Safeguard deployments.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <div class="flex items-center text-gray-400 group p-1 rounded-lg">
+                                                    <div class="rounded-md bg-gray-200 p-3 m-1">
+                                                        <svg class="w-5 h-5 text-gray-400 drop-shadow-2xl mx-auto"
+                                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                            fill="currentColor" viewBox="0 0 18 18">
+                                                            <path
+                                                                d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="columns-1 ml-3">
+                                                        <div class="font-bold">
+                                                            zones
+                                                        </div>
+                                                        <div class="font-normal">
+                                                            Coordinate stakeholders.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/blog/"
+                                class="block py-2 px-3 text-teal-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-600 md:p-0      "
+                                aria-current="page">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+</div>
+
+<div class="absolute inset-x-0 -top-40 z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+    <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#164e63] to-[#0891b2] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+    </div>
+</div>
+
+      <section class="bg-white" id="blog">
+        <div class="py-8 mx-auto max-w-screen-lg sm:py-16 px-4 xl:px-0 mt-32">
+
+          <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+
+
+        </div>
+      </section>
+    </div>
+
+    <footer class="p-4 mt-12 sm:p-6 bg-white">
+    <div class="mx-auto max-w-screen-xl">
+        <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-600 text-center grow">© 2023 <a href="https://straumli.xyz" class="hover:underline">Straumli™</a> All Rights Reserved.
+            </span>
+        </div>
+    </div>
+</footer>
+  </div>
+</body>
+
+</html>
