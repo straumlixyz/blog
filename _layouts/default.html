@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+{% include head.html %}
+
+
+<body class="color-no-search">
+  <div class="min-h-screen flex flex-col">
+    <div class="flex-grow">
+
+      {% include navbar.html %}
+
+      <section class="bg-white" id="blog">
+        <div class="py-8 mx-auto max-w-screen-lg sm:py-16 px-4 xl:px-0 mt-32">
+
+          {{ content }}
+
+        </div>
+      </section>
+    </div>
+
+    {% include footer.html %}
+  </div>
+</body>
+
+</html>

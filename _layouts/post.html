@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+{% include head.html %}
+
+
+<body class="color-no-search">
+  <div class="min-h-screen flex flex-col">
+    <div class="flex-grow">
+
+      {% include navbar.html %}
+
+      <section class="bg-white" id="blog">
+        <div class="py-8 mx-auto max-w-screen-sm sm:py-16 px-4 xl:px-0 mt-32">
+          <div class="text-4xl font-bold mb-4">{{ page.title }}</div>
+          <div class="mb-5 text-gray-500">
+            {{ page.date | date: "%B %-d, %Y" }}
+          </div>
+          {% for tag in page.tags %}
+          <span class="bg-cyan-600 text-md text-white font-medium px-1.5 py-1 mr-1 rounded-lg">{{ tag
+            }}</span>
+          {% endfor %}
+          <div class="mb-16">
+          </div>
+
+          <div class="prose">
+            {{ content }}
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    {% include footer.html %}
+  </div>
+</body>
+
+</html>
