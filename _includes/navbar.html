@@ -1,7 +1,7 @@
 <div class="bg-white">
     <header class="absolute inset-x-0 top-0 z-50">
         <nav class="border-gray-200">
-            <div class="flex flex-wrap items-center justify-between p-8 m-4 mt-2">
+            <div class="flex flex-wrap items-center justify-between p-8 -ml-4 -mt-4 md:m-4 md:mt-2">
                 <div class="flex">
                     <div class="font-logo text-gray-900 font-bold text-3xl flex">
                         <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-8 text-gray-900 pt-2">
@@ -19,10 +19,20 @@
                 <div class="flex items-center md:order-1 space-x-1 md:space-x-2 rtl:space-x-reverse">
                     <a
                         class="text-gray-800focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5  focus:outline-none ">&nbsp;</a>
+                    <button data-collapse-toggle="mega-menu-icons" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="mega-menu-icons" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
                 </div>
                 <div id="mega-menu-icons"
-                    class="items-center justify-between hidden w-full md:flex md:w-auto md:order-2">
-                    <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+                    class="items-center justify-between hidden w-full md:flex md:w-auto md:order-2 bg-white md:bg-inherit mt-2 md:mt-0">
+                    <ul class="flex flex-col mt-0 font-medium md:flex-row sm:mt-0 md:space-x-8 rtl:space-x-reverse">
                         <li>
                             <a href="/"
                                 class="block py-2 px-3 text-teal-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-600 md:p-0      "
@@ -40,7 +50,7 @@
                             </button>
                             <div id="mega-menu-icons-dropdown"
                                 class="absolute z-10 grid hidden w-auto grid-cols-1 text-sm bg-white border border-gray-100 rounded-lg shadow-2xl">
-                                <div class="p-2 text-gray-900 max-w-xs">
+                                <div class="p-2 text-gray-900 w-96 md:w-fit md:max-w-xs">
                                     <ul aria-labelledby="mega-menu-icons-dropdown-button">
                                         <li>
                                             <a href="/#cta">
