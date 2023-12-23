@@ -35,6 +35,7 @@ plugins:
   - jekyll-feed
 
 destination: ./docs
+future: true
 
 collections:
   posts:

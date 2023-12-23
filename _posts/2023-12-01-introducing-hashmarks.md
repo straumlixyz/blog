@@ -2,7 +2,6 @@
 title: Introducing Hashmarks
 tags:
   - research
-  - evaluations
 layout: post
 ---
 

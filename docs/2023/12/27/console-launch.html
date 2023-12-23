@@ -95,53 +95,46 @@
 </div>
 
       <section class="bg-white" id="blog">
-        <div class="py-8 mx-auto max-w-screen-lg py-16 px-4 px-8 lg:px-0 mt-16 sm:mt-32">
+        <div class="py-8 mx-auto max-w-screen-sm sm:py-16 px-4 xl:px-0 mt-16 sm:mt-32">
+          <div class="text-3xl font-bold mb-4">Evaluate Dangerous Capabilities Today</div>
+          <div class="mb-5 text-gray-500">
+            December 27, 2023
+          </div>
+          
+          <span class="bg-cyan-600 text-md text-white font-medium px-1.5 py-1 mr-1 rounded-lg">product</span>
+          
+          <div class="mb-16">
+          </div>
 
-          <div class="max-w-screen-sm mb-16">
-    <p class="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Blog</p>
-    <p class="mt-6 text-lg leading-7 text-gray-600">Stay up to date with research
-        updates, insights into recent policy developments, and career opportunities.</p>
-</div>
+          <div class="prose">
+            <p>After months of passionate iteration, we’re thrilled to launch our brand new <a href="https://console.straumli.ai/">console</a> that enables users to run state-of-the-art evaluations on their generative models with the click of a button.</p>
 
+<p><img class="shadow-2xl rounded-md w-screen-lg pt-4" src="/blog/assets/console_launcheval.png" /></p>
+<div class="text-center text-xs text-gray-400">Launching a new evaluation.</div>
+<div class="pt-4"></div>
 
-<div class="grid md:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:gap-8">
-    
-    <a href="/blog/2023/12/27/console-launch.html">
-        <div class="h-fit from-cyan-600 bg-gradient-to-br to-cyan-700 rounded-3xl shadow-2xl">
-            <div class="p-8">
-                <div class="text-white mb-4">
-                    December 27, 2023
-                </div>
-                <h5 class="mb-6 text-2xl text-white font-bold tracking-tight text-gray-900 ">Evaluate Dangerous Capabilities Today
-                </h5>
-                
-                <span class="bg-cyan-700 text-md text-white font-medium px-1.5 py-1 mr-1 rounded-lg">product</span>
-                
-                <p class="mt-6 font-normal text-gray-100">After months of passionate iteration, we’re thrilled to launch our brand new console that enables users to run state-of-the-art evaluations on their generative models with the click of a button.
+<p>This early version focuses heavily on surfacing misuse risks, helping organizations screen their models for dangerous capabilities before deploying them in the wild and allowing bad actors to exploit them. The current console ships with access to four evaluations targeting biowarfare and cyberwarfare, three of which are the first of their kind:</p>
 
+<ul>
+  <li><strong>Biowarfare 101</strong> enables organizations to asses their models’ knowledge of bioweapon design and deployment. While enhanced documentation is underway, we are keen on stressing the fact that we can successfully administer this evaluation <em>without us knowing the right answers</em>, thus leaving only the domain experts in the know. This is made possible by our recent <a href="https://arxiv.org/abs/2312.00645">cryptographic protocol</a>, paving the way for zero-trust safety infrastructure.</li>
+  <li><strong>AutoHack</strong> enables organizations to assess their models’ ability to identify cybersecurity vulnerabilities in the context of dozens of whitebox “Capture The Flag” challenges. Such cybersecurity puzzles are routinely used by professionals to develop, sharpen, and assess their own offensive skills. Similar to the previous evaluation, additional details will be announced shortly. That said, we’re excited to be the first platform in the world to provide self-serve evaluations for surfacing such AI risks.</li>
+  <li><strong>Complicity</strong> complements the above two evaluations by measuring a model’s general openness to facilitating or engaging in illicit activities on behalf of the user. While we’ll delve into “the anatomy of misuse” in future educational resources, the essence of this evaluation lies in the understanding that models must not only possess dual-use knowledge or skills to pose a risk, but also be open to using them.</li>
+  <li><strong>Model Leakage</strong> targets models deployed through user-facing endpoints, and assesses the traditional cybersecurity of such infrastructure. It involves automated vulnerability scanners and in-house pentesters attempting to gain access to the gated model. Following the theme of the previous evaluation, a gated model with dual-use capabilities may not be secure enough if someone can gain complete access and remove the guardrails. That said, we believe there may be ways of increasing the “stickiness” of guardrails, thus helping preserve the viability of open source AI going forward.</li>
+</ul>
 
-...</p>
-            </div>
-        </div>
-    </a>
-    
-    <a href="/blog/2023/12/01/introducing-hashmarks.html">
-        <div class="h-fit from-cyan-600 bg-gradient-to-br to-cyan-700 rounded-3xl shadow-2xl">
-            <div class="p-8">
-                <div class="text-white mb-4">
-                    December 1, 2023
-                </div>
-                <h5 class="mb-6 text-2xl text-white font-bold tracking-tight text-gray-900 ">Introducing Hashmarks
-                </h5>
-                
-                <span class="bg-cyan-700 text-md text-white font-medium px-1.5 py-1 mr-1 rounded-lg">research</span>
-                
-                <p class="mt-6 font-normal text-gray-100">How can we assess dangerous capabilities without disclosing sensitive information? Traditional benchmarks are like exams for AI, complete with reference solutions. However, a benchmark on bioterror...</p>
-            </div>
-        </div>
-    </a>
-    
-</div>
+<p><img class="shadow-2xl rounded-md w-screen-lg pt-4" src="/blog/assets/console_registerartifact.png" /></p>
+<div class="text-center text-xs text-gray-400">Registering a new artifact.</div>
+<div class="pt-4"></div>
+
+<p>While we’re engineers at heart, we believe anyone should be able to gain clarity on the available means of ensuring safe AI development. That’s why we designed the console in such a way as to require no technical expertise whatsoever. Users can simply create an account, register an artifact, and run an evaluation on it. Preserving accessibility remains a top priority as we continue to productize bleeding-edge safety research.</p>
+
+<p>These four inaugural evaluations equip organizations with the means necessary to gain insight into the misuse potential of their systems today. While these already frontrun regulatory bodies scurrying to flesh out standards, they are just the beginning. Over the coming weeks, we’ll continue to iterate on these evaluations, design new ones, and, most importantly, learn from our users. In a broader sense, we’ll persist in pioneering AI safety infrastructure by introducing new protocols, frameworks, and tools that genuinely contribute to mitigating emerging AI risks.</p>
+
+<p><em>Are you involved in developing or deploying generative models? <a href="https://console.straumli.ai/">Run an evaluation</a> or <a href="https://calendly.com/paul-from-straumli/demo">book a demo</a> to understand how we can set you up for success in tomorrow’s regulatory environment by mitigating risks today.</em></p>
+
+<p><em>Are you attending <a href="https://www.effectivealtruism.org/ea-global/events/ea-global-bay-area-2024-global-catastrophic-risks">EAG 2024 (Global Catastrophic Risks)</a>? Reach out to arrange an in-person demo.</em></p>
+
+          </div>
 
         </div>
       </section>
