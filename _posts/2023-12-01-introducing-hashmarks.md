@@ -3,6 +3,7 @@ title: Introducing Hashmarks
 tags:
   - research
 layout: post
+permalink: introducing-hashmarks
 ---
 
 How can we assess dangerous capabilities without disclosing sensitive information? Traditional benchmarks are like exams for AI, complete with reference solutions. However, a benchmark on bioterrorism would amount to a public FAQ on a sensitive topic.
