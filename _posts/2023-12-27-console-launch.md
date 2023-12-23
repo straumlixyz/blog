@@ -27,5 +27,3 @@ While we're engineers at heart, we believe anyone should be able to gain clarity
 These four inaugural evaluations equip organizations with the means necessary to gain insight into the misuse potential of their systems today. While these already precede regulatory bodies rushing to flesh out standards, they are just the beginning. Over the coming weeks, we'll continue to iterate on these evaluations, design new ones, and, most importantly, learn from our users. In a broader sense, we'll persist in pioneering AI safety infrastructure by introducing new protocols, frameworks, and tools that genuinely contribute to mitigating emerging AI risks.
 
 _Are you involved in developing or deploying generative models? [Run an evaluation](https://console.straumli.ai/) or [book a demo](https://calendly.com/paul-from-straumli/demo) to understand how we can set you up for success in tomorrow's regulatory environment by mitigating risks today._
-
-_Are you attending [EAG 2024 (Global Catastrophic Risks)](https://www.effectivealtruism.org/ea-global/events/ea-global-bay-area-2024-global-catastrophic-risks)? Reach out to arrange an in-person demo._
