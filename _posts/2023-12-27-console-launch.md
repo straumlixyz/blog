@@ -10,7 +10,7 @@ image: mockup_consolelaunch.png
 
 After months of passionate iteration, we're thrilled to launch our brand new [console](https://console.straumli.ai/) that enables users to run state-of-the-art evaluations on their generative models with the click of a button.
 
-<img class="shadow-2xl rounded-md w-screen-lg pt-4" src="{{ site.baseurl }}/assets/console_launcheval.jpg" />
+<img class="shadow-2xl rounded-md w-screen-lg" src="{{ site.baseurl }}/assets/console_launcheval.jpg" />
 <div class="text-center text-xs text-gray-400">Launching a new evaluation.</div>
 <div class="pt-4"></div>
 
@@ -21,7 +21,7 @@ This early version focuses heavily on surfacing misuse risks, helping organizati
 - **Complicity** complements the above two evaluations by measuring a model's general openness to facilitating or engaging in illicit activities on behalf of the user. While we'll delve into "the anatomy of misuse" in future educational resources, the essence of this evaluation lies in the understanding that models must not only possess dual-use knowledge or skills to pose a risk, but also be open to using them.
 - **Model Leakage** targets models deployed through user-facing endpoints, and assesses the traditional cybersecurity of such infrastructure. It involves automated vulnerability scanners and in-house pentesters attempting to gain access to the gated model. Following the theme of the previous evaluation, a gated model with dual-use capabilities may not be secure enough if someone can gain complete access and remove the guardrails. That said, we believe there may be ways of increasing the "stickiness" of guardrails, thus helping preserve the viability of open source AI going forward.
 
-<img class="shadow-2xl rounded-md w-screen-lg pt-4" src="{{ site.baseurl }}/assets/console_registerartifact.jpg" />
+<img class="shadow-2xl rounded-md w-screen-lg" src="{{ site.baseurl }}/assets/console_registerartifact.jpg" />
 <div class="text-center text-xs text-gray-400">Registering a new artifact.</div>
 <div class="pt-4"></div>
 
