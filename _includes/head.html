@@ -17,5 +17,23 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 
-    <title>Straumli</title>
+    <title>Straumli AI ⋅ Blog</title>
+
+    {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title">
+    {% else %}
+    <meta content="{{ site.title }}" property="og:title">
+    {% endif %}
+
+    {% if page.description %}
+    <meta content="{{ page.description }}" property="og:description">
+    {% else %}
+    <meta content="{{ site.description }}" property="og:description">
+    {% endif %}
+
+    {% if page.image %}
+    <meta content="{{ site.baseurl }}/assets/{{ page.image }}" property="og:image">
+    {% else %}
+    <meta content="{{ site.baseurl }}/assets/bg-logo.png" property="og:image">
+    {% endif %}
 </head>

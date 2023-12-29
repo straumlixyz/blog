@@ -4,6 +4,8 @@ tags:
   - product
 layout: post
 permalink: console-launch
+description: After months of passionate iteration, we're thrilled to launch our brand new console that helps organizations screen their models for dangerous capabilities before deploying them in the wild.
+image: console_launcheval.jpg
 ---
 
 After months of passionate iteration, we're thrilled to launch our brand new [console](https://console.straumli.ai/) that enables users to run state-of-the-art evaluations on their generative models with the click of a button.
