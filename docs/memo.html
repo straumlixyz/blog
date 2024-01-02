@@ -1,4 +1,125 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2024-01-02T11:19:35+02:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Straumli AI ⋅ Blog</title><subtitle>Ship safe AI faster with managed auditing.</subtitle><entry><title type="html">Memo: Insights From Studying Dual-Use AI Capabilities in the Wild</title><link href="http://localhost:4000/blog/memo" rel="alternate" type="text/html" title="Memo: Insights From Studying Dual-Use AI Capabilities in the Wild" /><published>2024-01-02T00:00:00+02:00</published><updated>2024-01-02T00:00:00+02:00</updated><id>http://localhost:4000/blog/memo</id><content type="html" xml:base="http://localhost:4000/blog/memo"><![CDATA[<div class="border-2 p-5 border-cyan-600 bg-cyan-100 rounded-md text">
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ship safe AI faster with managed auditing.">
+    <meta name="keywords" content="AI, safety, alignment, misuse, misalignment">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="/blog/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+
+    <title>Straumli AI ⋅ Blog</title>
+
+    
+    <meta content="Memo: Insights From Studying Dual-Use AI Capabilities in the Wild" property="og:title">
+    
+
+    
+    <meta content="Our new evaluation suite indicates that AI misuse potential is on the rise. However, current triggers for additional scrutiny based on raw amounts of computation are not rising to the challenge, due to rapid algorithmic advances enabling practitioners to get more with less. That said, actually screening for the dual&#8209;use capabilities themselves is extremely cheap, enabling relevant actors to take commonsense precautions against systemic risks at negligible cost." property="og:description">
+    
+
+    
+    <meta content="https://straumli.ai/blog/assets/mockup_solverate.png" property="og:image">
+    
+</head>
+
+
+<body class="color-no-search">
+  <div class="min-h-screen flex flex-col">
+    <div class="flex-grow">
+
+      <div class="bg-white">
+    <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="border-gray-200">
+            <div class="flex flex-wrap items-center justify-between p-8 -ml-4 -mt-4 md:m-4 md:mt-2">
+                <div class="flex">
+                    <div class="font-logo text-gray-900 font-bold text-3xl flex">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-8 text-gray-900 pt-2">
+                            <path fill-rule="evenodd"
+                                d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <div class="ml-1">
+                            <a href="/">
+                                straumli
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center md:order-1 space-x-1 md:space-x-2 rtl:space-x-reverse">
+                    <a
+                        class="text-gray-800focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5  focus:outline-none ">&nbsp;</a>
+                    <button data-collapse-toggle="mega-menu-icons" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="mega-menu-icons" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="mega-menu-icons"
+                    class="items-center justify-between hidden w-full md:flex md:w-auto md:order-2 bg-white md:bg-inherit mt-4 md:mt-0">
+                    <ul
+                        class="flex flex-col mt-0 font-medium md:flex-row sm:mt-0 md:space-x-8 rtl:space-x-reverse shadow-2xl rounded-md">
+                        <li>
+                            <a href="/"
+                                class="block py-2 px-3 text-cyan-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-cyan-600 md:p-0      "
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="/blog/"
+                                class="block py-2 px-3 text-cyan-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-cyan-600 md:p-0      "
+                                aria-current="page">Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://console.straumli.ai/"
+                                class="block py-2 px-3 text-cyan-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-cyan-600 md:p-0      "
+                                aria-current="page">Console</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+</div>
+
+<div class="absolute inset-x-0 -top-40 z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+    <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#164e63] to-[#0891b2] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+    </div>
+</div>
+
+      <section class="bg-white" id="blog">
+        <div class="py-8 mx-auto max-w-screen-sm sm:py-16 px-4 xl:px-0 mt-16 sm:mt-32">
+          <div class="text-3xl font-bold mb-4">Memo: Insights From Studying Dual-Use AI Capabilities in the Wild</div>
+          <div class="mb-5 text-gray-500">
+            January 2, 2024
+          </div>
+          
+          <span class="bg-cyan-600 text-md text-white font-medium px-1.5 py-1 mr-1 rounded-lg">research</span>
+          
+          <div class="mb-16">
+          </div>
+
+          <div class="prose">
+            <div class="border-2 p-5 border-cyan-600 bg-cyan-100 rounded-md text">
 Our new evaluation suite indicates that AI misuse potential is on the rise. However, current triggers for additional scrutiny based on raw amounts of computation are not rising to the challenge, due to rapid algorithmic advances enabling practitioners to get more with less. That said, actually screening for the dual&#8209;use capabilities themselves is extremely cheap, enabling relevant actors to take commonsense precautions against systemic risks at negligible cost.
 </div>
 
@@ -78,35 +199,23 @@ In this context, we suggest that high-level policies leave the door open for sta
       <p><a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name></name></author><category term="research" /><summary type="html"><![CDATA[Our new evaluation suite indicates that AI misuse potential is on the rise. However, current triggers for additional scrutiny based on raw amounts of computation are not rising to the challenge, due to rapid algorithmic advances enabling practitioners to get more with less. That said, actually screening for the dual&#8209;use capabilities themselves is extremely cheap, enabling relevant actors to take commonsense precautions against systemic risks at negligible cost.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/blog/mockup_solverate.png" /><media:content medium="image" url="http://localhost:4000/blog/mockup_solverate.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Evaluate Dangerous Capabilities Today</title><link href="http://localhost:4000/blog/console-launch" rel="alternate" type="text/html" title="Evaluate Dangerous Capabilities Today" /><published>2023-12-27T00:00:00+02:00</published><updated>2023-12-27T00:00:00+02:00</updated><id>http://localhost:4000/blog/console-launch</id><content type="html" xml:base="http://localhost:4000/blog/console-launch"><![CDATA[<p>After months of passionate iteration, we’re thrilled to launch our brand new <a href="https://console.straumli.ai/">console</a> that enables users to run state-of-the-art evaluations on their generative models with the click of a button.</p>
+</div>
 
-<p><img class="shadow-2xl rounded-md w-screen-lg" src="/blog/assets/console_launcheval.jpg" /></p>
-<div class="text-center text-xs text-gray-400">Launching a new evaluation.</div>
-<div class="pt-4"></div>
+          </div>
 
-<p>This early version focuses heavily on surfacing misuse risks, helping organizations screen their models for dangerous capabilities before deploying them in the wild and allowing bad actors to exploit them. The current console ships with access to four evaluations targeting biowarfare and cyberwarfare, three of which are the first of their kind:</p>
+        </div>
+      </section>
+    </div>
 
-<ul>
-  <li><strong>Biowarfare 101</strong> enables organizations to asses their models’ knowledge of bioweapon design and deployment. While enhanced documentation is underway, we are keen on stressing the fact that we can successfully administer this evaluation <em>without us knowing the right answers</em>, thus leaving only the domain experts in the know. This is made possible by our recent <a href="/blog/introducing-hashmarks">cryptographic protocol</a>, paving the way for zero-trust safety infrastructure.</li>
-  <li><strong>AutoHack</strong> enables organizations to assess their models’ ability to identify cybersecurity vulnerabilities in the context of dozens of whitebox “Capture The Flag” challenges. Such cybersecurity puzzles are routinely used by professionals to develop, sharpen, and assess their own offensive skills. Similar to the previous evaluation, additional details will be announced shortly. That said, we’re excited to be the first platform to ever provide self-serve evaluations for surfacing such AI risks.</li>
-  <li><strong>Complicity</strong> complements the above two evaluations by measuring a model’s general openness to facilitating or engaging in illicit activities on behalf of the user. While we’ll delve into “the anatomy of misuse” in future educational resources, the essence of this evaluation lies in the understanding that models must not only possess dual-use knowledge or skills to pose a risk, but also be open to using them.</li>
-  <li><strong>Model Leakage</strong> targets models deployed through user-facing endpoints, and assesses the traditional cybersecurity of such infrastructure. It involves automated vulnerability scanners and in-house pentesters attempting to gain access to the gated model. Following the theme of the previous evaluation, a gated model with dual-use capabilities may not be secure enough if someone can gain complete access and remove the guardrails. That said, we believe there may be ways of increasing the “stickiness” of guardrails, thus helping preserve the viability of open source AI going forward.</li>
-</ul>
+    <footer class="p-4 mt-12 sm:p-6 bg-white">
+    <div class="mx-auto max-w-screen-xl">
+        <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-600 text-center grow">© 2023 <a href="https://straumli.xyz" class="hover:underline">Straumli™</a> All Rights Reserved.
+            </span>
+        </div>
+    </div>
+</footer>
+  </div>
+</body>
 
-<p><img class="shadow-2xl rounded-md w-screen-lg" src="/blog/assets/console_registerartifact.jpg" /></p>
-<div class="text-center text-xs text-gray-400">Registering a new artifact.</div>
-<div class="pt-4"></div>
-
-<p>While we’re engineers at heart, we believe anyone should be able to gain clarity on the available means of ensuring safe AI development. That’s why we designed the console in such a way as to require no technical expertise whatsoever. Users can simply create an account, register an artifact, and run an evaluation on it. Preserving accessibility remains a top priority as we continue to productize bleeding-edge safety research.</p>
-
-<p>These four inaugural evaluations equip organizations with the means necessary to gain insight into the misuse potential of their systems today. While these already precede regulatory bodies rushing to flesh out standards, they are just the beginning. Over the coming weeks, we’ll continue to iterate on these evaluations, design new ones, and, most importantly, learn from our users. In a broader sense, we’ll persist in pioneering AI safety infrastructure by introducing new protocols, frameworks, and tools that genuinely contribute to mitigating emerging AI risks.</p>
-
-<p><em>Are you involved in developing or deploying generative models? <a href="https://console.straumli.ai/">Run an evaluation</a> or <a href="https://calendly.com/paul-from-straumli/demo">book a demo</a> to understand how we can set you up for success in tomorrow’s regulatory environment by mitigating risks today.</em></p>]]></content><author><name></name></author><category term="product" /><summary type="html"><![CDATA[After months of passionate iteration, we're thrilled to launch our brand new console that helps organizations screen their models for dangerous capabilities before deploying them in the wild.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/blog/mockup_consolelaunch.png" /><media:content medium="image" url="http://localhost:4000/blog/mockup_consolelaunch.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing Hashmarks</title><link href="http://localhost:4000/blog/introducing-hashmarks" rel="alternate" type="text/html" title="Introducing Hashmarks" /><published>2023-12-01T00:00:00+02:00</published><updated>2023-12-01T00:00:00+02:00</updated><id>http://localhost:4000/blog/introducing-hashmarks</id><content type="html" xml:base="http://localhost:4000/blog/introducing-hashmarks"><![CDATA[<p>How can we assess dangerous capabilities without disclosing sensitive information? Traditional benchmarks are like exams for AI, complete with reference solutions. However, a benchmark on bioterrorism would amount to a public FAQ on a sensitive topic.</p>
-
-<p>To enable evaluation while mitigating misuse, we introduce <a href="https://arxiv.org/abs/2312.00645">hashmarks</a>, a simple alternative to benchmarks. In their basic form, hashmarks are benchmarks whose reference solutions have been cryptographically hashed prior to publication.</p>
-
-<p>To <a href="https://arxiv.org/pdf/2312.00645.pdf#page=3">assess performance on a hashmark</a>, developers first get their AI to answer an exam question. Then, they hash the candidate answer and see whether the hash matches the reference one. If the model got it wrong, the correct answer remains secret.</p>
-
-<p>However, things are not that simple. We investigate <a href="https://arxiv.org/pdf/2312.00645.pdf#page=5">the resilience of hashmarks</a> against half a dozen failure modes, ranging from rainbow table attacks to the Streisand effects associated with obfuscating sensitive information.</p>
-
-<p>All in all, hashmarks provide just one tool in our growing arsenal of high-stakes AI evaluations. We look forward to engaging with community feedback before pushing forward with concrete instances of hashmarks.</p>]]></content><author><name></name></author><category term="research" /><summary type="html"><![CDATA[How can we assess dangerous capabilities without disclosing sensitive information? Traditional benchmarks are like exams for AI, complete with reference solutions. However, a benchmark on bioterrorism would amount to a public FAQ on a sensitive topic.]]></summary></entry></feed>
+</html>
